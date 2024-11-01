@@ -1,4 +1,4 @@
 Only
 works 
 on
-lini
+linux
