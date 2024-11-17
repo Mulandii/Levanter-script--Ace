@@ -18,7 +18,7 @@ run_with_sudo() {
 }
 
 # Prompt for BOT name
-echo -e "\e[36mGreetings Human Am Ace.Enter a name for your BOT (e.g., levanter):\e[0m"
+echo -e "\e[36mGreetings Master Mulandi🫠.Enter a name for your BOT (e.g., levanter):\e[0m"
 read -r BOT_NAME
 BOT_NAME=${BOT_NAME:-levanter}
 
@@ -34,7 +34,7 @@ echo -e "\e[36mDo you have a SESSION_ID scanned today? (y/n):\e[0m"
 read -r HAS_SESSION_ID
 SESSION_ID=""
 if [[ "$HAS_SESSION_ID" == "y" ]]; then
-    echo -e "\e[36mEnter Your SESSION_ID:\e[0m"
+    echo -e "\e[36mNice😉,Now Enter Your SESSION_ID:\e[0m"
     read -r SESSION_ID
 fi
 
@@ -154,24 +154,51 @@ fi
 
 # Create config.env file
 echo -e "\e[33mCreating config.env file...\e[0m"
-cat > config.env <<EOL
-PREFIX=.
-STICKER_PACKNAME=ᵃᶜᵉ±𝙽𝚢𝚡
-ALWAYS_ONLINE=true
-RMBG_KEY=null
-LANGUAGE=en
-WARN_LIMIT=3
-FORCE_LOGOUT=false
-BRAINSHOP=159501,6pq8dPiYt7PdqHz3
-MAX_UPLOAD=60
-REJECT_CALL=false
-SUDO=null,254768827492
-TZ=Africa/Nairobi
-VPS=true
-AUTO_STATUS_VIEW=no-dl
-SEND_READ=false
-AJOIN=true
-STATUS_VIEW_EMOJI = 🤍, 🌙, 🍥, 🦋, ☘️, ✨, 🍒, 🪻, 🌸, 🍃, 🧸
+cat > config.env <<EOL 
+                      
+PREFIX = null
+
+STICKER_PACKNAME = ᵃᶜᵉ±𝙽𝚢𝚡
+
+ALWAYS_ONLINE = true
+
+RMBG_KEY = null
+
+LANGUAGE = en
+
+WARN_LIMIT = 3
+
+FORCE_LOGOUT = false
+
+BRAINSHOP = 159501,6pq8dPiYt7PdqHz3
+
+MAX_UPLOAD = 60
+
+REJECT_CALL = false
+
+SUDO = null,254768827492
+
+TZ = Africa/Nairobi
+
+VPS = true
+
+AUTO_STATUS_VIEW = no-dl
+
+SEND_READ = false
+
+AJOIN = true
+
+STATUS_VIEW_EMOJI = false
+
+ANTI_DELETE = p
+
+BING_COOKIE = false
+
+VV = p
+
+GEMINI_API_KEY = AIzaSyBS8IDHKR-49k9kB7vMA4moHAZAUR3hA0g
+
+MENTION = { "contextInfo": { "forwardingScore": 5, "isForwarded": false }, "linkPreview": { "head": "𝙷𝚎𝚕𝚕𝚘 𝚝𝚑𝚎𝚛𝚎🍃", "body": " Tap to view👐", "mediaType": 2, "thumbnail": "https://files.catbox.moe/o9bfas.jpeg", "sourceUrl": "https://by-ace.vercel.app/" } , "waveform": [ 20,5,0,80,80,30,20,50 ] }
                       
 EOL
 
