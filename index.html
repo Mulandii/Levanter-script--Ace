@@ -6,7 +6,7 @@ if ! command -v apt &> /dev/null; then
     exit 1
 fi
 
-export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive 
 
 # Function to run commands with sudo if not root
 run_with_sudo() {
